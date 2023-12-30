@@ -40,5 +40,47 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "DemoGHPage/visualization.html",
+    "href": "DemoGHPage/visualization.html",
+    "title": "Demo Visualization",
+    "section": "",
+    "text": "Start new data analysis task with a project. To do that, follow this steps:\n\nClick File -&gt;\nClick New Project -&gt;\nSet name to this directory\nClick Create Project"
+  },
+  {
+    "objectID": "DemoGHPage/visualization.html#histogram",
+    "href": "DemoGHPage/visualization.html#histogram",
+    "title": "Demo Visualization",
+    "section": "Histogram",
+    "text": "Histogram\n\nggplot(gapminder) +\n  geom_histogram(aes(lifeExp))\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`."
+  },
+  {
+    "objectID": "DemoGHPage/visualization.html#barchart",
+    "href": "DemoGHPage/visualization.html#barchart",
+    "title": "Demo Visualization",
+    "section": "Barchart",
+    "text": "Barchart\n\nggplot(gapminder) +\n  geom_bar(aes(continent))"
+  },
+  {
+    "objectID": "DemoGHPage/visualization.html#line-graph",
+    "href": "DemoGHPage/visualization.html#line-graph",
+    "title": "Demo Visualization",
+    "section": "Line graph",
+    "text": "Line graph\n\nggplot(gapminder) +\n  geom_line(aes(x = year, y = lifeExp, group = country))"
+  },
+  {
+    "objectID": "DemoGHPage/about.html",
+    "href": "DemoGHPage/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "DemoGHPage/index.html",
+    "href": "DemoGHPage/index.html",
+    "title": "DemoGHPage",
+    "section": "",
+    "text": "This is a demo on how to publish Quarto website on GitHub Pages\nReferences:\n\nQuarto - GitHub Pages\nYouTube"
   }
 ]
