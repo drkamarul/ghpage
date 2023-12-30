@@ -1,0 +1,45 @@
+---
+title: "Demo Visualization"
+---
+
+# Prepare your R space
+
+Start new data analysis task with a project. To do that, follow this steps:
+
+-   Click **File** -\>
+-   Click **New Project** -\>
+-   Set **name** to this directory
+-   Click **Create Project**
+
+# Load libraries
+
+-   tidyverse - to make plots
+-   gapminder - to use the gapminder data
+
+```{r}
+library(tidyverse)
+library(gapminder)
+```
+
+# Basic plots
+
+## Histogram
+
+```{r}
+ggplot(gapminder) +
+  geom_histogram(aes(lifeExp))
+```
+
+## Barchart
+
+```{r}
+ggplot(gapminder) +
+  geom_bar(aes(continent))
+```
+
+## Line graph
+
+```{r}
+ggplot(gapminder) +
+  geom_line(aes(x = year, y = lifeExp, group = country))
+```
