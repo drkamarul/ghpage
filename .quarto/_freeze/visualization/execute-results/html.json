@@ -1,0 +1,16 @@
+{
+  "hash": "7836a7352a88742091a347401655c1be",
+  "result": {
+    "markdown": "---\ntitle: \"Demo Visualization\"\n---\n\n\n# Prepare your R space\n\nStart new data analysis task with a project. To do that, follow this steps:\n\n-   Click **File** -\\>\n-   Click **New Project** -\\>\n-   Set **name** to this directory\n-   Click **Create Project**\n\n# Load libraries\n\n-   tidyverse - to make plots\n-   gapminder - to use the gapminder data\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.4.4     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors\n```\n:::\n\n```{.r .cell-code}\nlibrary(gapminder)\n```\n:::\n\n\n# Basic plots\n\n## Histogram\n\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot(gapminder) +\n  geom_histogram(aes(lifeExp))\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n```\n:::\n\n::: {.cell-output-display}\n![](visualization_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n## Barchart\n\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot(gapminder) +\n  geom_bar(aes(continent))\n```\n\n::: {.cell-output-display}\n![](visualization_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n## Line graph\n\n\n::: {.cell}\n\n```{.r .cell-code}\nggplot(gapminder) +\n  geom_line(aes(x = year, y = lifeExp, group = country))\n```\n\n::: {.cell-output-display}\n![](visualization_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "visualization_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
